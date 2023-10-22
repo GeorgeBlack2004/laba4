@@ -42,4 +42,4 @@ if deal1 == 0:
     print("Вы не можете купить этот дом!")
 else:
     Bob.make_deal(House1, House1.final_price(10))
-    print("Вы купили этот дом!")
+    print("Вы купили этот дом! ")
