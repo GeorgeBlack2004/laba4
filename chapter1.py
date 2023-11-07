@@ -3,7 +3,7 @@ import math
 
 class Triangle:
     def check(self, a, b, c):
-        if a > b + c or b > a + c or c > a + b:
+        if a >= b + c or b >= a + c or c >= a + b:
             return False
         return True
 
