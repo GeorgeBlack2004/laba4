@@ -41,19 +41,25 @@ class Human:
 
 House1 = House(60, 5000, "Beverlie Hills House")
 House2 = House(120, 7000, "Hollywood House")
+
 SmallHouse1 = SmallHouse(0, 3000, "Minsk House")
 SmallHouse2 = SmallHouse(0, 3000, "Moscow House")
+
 Alexander = Human(10000, "Alexander")
 Victoria = Human(3600, "Victoria")
 Bob = Human(2000, "Bob")
 
 deal1 = Bob.buy_house(House1.final_price(10))
 Bob.deal(deal1, Bob, House1)
+
 deal2 = Victoria.buy_house(SmallHouse1.final_price(20))
 Victoria.deal(deal2, Victoria, SmallHouse1)
+
 deal3 = Victoria.buy_house(SmallHouse2.final_price(10))
 Victoria.deal(deal3, Victoria, SmallHouse2)
+
 deal4 = Alexander.buy_house(House2.final_price(0))
 Alexander.deal(deal4, Alexander, House2)
+
 deal5 = Alexander.buy_house(SmallHouse2.final_price(0))
 Alexander.deal(deal5, Alexander, SmallHouse2)
